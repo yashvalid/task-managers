@@ -30,12 +30,10 @@ const Login = () => {
             console.log(err);
             setError(err.response?.data?.error || "Login failed. Please try again.");
         } finally {
-            setTimeout(() => {
-                setError(null);
-                setSuccess(null);
-                setEmail("")
-                setPassword("")
-            }, 3000);
+            setError(null);
+            setSuccess(null);
+            setEmail("")
+            setPassword("")
         }
     }
 
