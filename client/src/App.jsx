@@ -5,12 +5,14 @@ import Register from './page/Register'
 import Navbar from './components/Navbar'
 import Dashboard from './page/Dashboard'
 import UserProtectedWrapper from './components/UserProtectedWrapper'
+import Home from './page/Home'
 
 function App() {
 
   return (
     <>
       <Routes>
+        <Route path='/' element={<Home />} />
         <Route path='/login' element={
           <>
             <Navbar />
